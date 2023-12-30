@@ -1,0 +1,537 @@
+/* Medium Layout: 992px. */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container{
+        width: 970px;
+    } 
+    .header_area {
+      margin-top: 30px;
+    }
+    .logo {
+      padding-left: 20px;
+    }
+    .logo a {
+      font-size: 17px;
+    }    
+    .logo a img {
+      width: 50px;
+    }    
+    ul.nav.navbar-nav li > a {
+      font-size: 15px;
+      padding: 0 12px;
+    }    
+    .key_to_success_area {
+      margin-top: -106px;
+    }
+    .index2 .key2seccess_txt {
+      top: calc(50% + 61.5px - 159px);
+    }
+    .sing_course_txt .course_icon {
+      bottom: 135px;
+      width: 100px;
+    }    
+    .latest_post li {
+      padding: 15px 0;
+    }    
+    .latest_post li img {
+      margin-right: 10px;
+      width: 50px;
+    }    
+    .latest_post_txt {
+      width: 150px;
+    }    
+    .latest_tweet li {
+      padding-left: 25px;
+    }    
+    .od_bg1, .od_bg2 {
+      min-height: 605px;
+    }    
+    .sing_degree_icon:after {
+      height: 80px;
+    }    
+    .event_date {
+      margin: 15px auto 0;
+    }    
+    .event_time {
+      margin: 30px auto;
+    }    
+    .blog_post_content > p {
+      min-height: 110px;
+    }
+    .index2 .single_testi_slider img {
+      margin-top: 60px;
+    }    
+    .sing_prac_content {
+      min-height: 365px;
+    }    
+    .call2action_btn a {
+      padding: 0 18px;
+    }    
+    .stay_con_txt a {
+      margin-top: 0;
+    }    
+    .sing_alumni_txt p {
+      min-height: 105px;
+    }    
+    .all_right_widgets {
+      padding: 35px 15px;
+    }
+    .lat_news_right img {
+      margin-right: 10px;
+    }
+    .lat_news_right_con {
+      width: 165px;
+    }    
+    .event_post_info ul li {
+      margin: 0 20px;
+    }    
+    .blog_post_footer ul {
+      padding: 0 10px;
+    }  
+    .blog_post_footer ul li {
+      margin-right: 15px;
+    }     
+}
+
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container{
+        width:750px;
+    }
+    .header_area {
+      margin-top: 20px;
+    }
+     .logo {
+      padding-left: 0;
+    }   
+    .logo a {
+      font-size: 15px;
+      line-height: 36px;
+    }    
+    .logo a img {
+      margin-left: 15px;
+    }    
+    ul.nav.navbar-nav li > a {
+      font-size: 13px;
+      padding: 0 10px;
+    }    
+    .nav_area .navbar-collapse {
+      padding-left: 0;
+    }    
+    .key_to_success_area {
+      margin-top: -96px;
+    }    
+    .course_search select {
+      margin-right: 1.8%;
+      width: 18%;
+    }
+    .course_search input[type="text"]{
+        width: 18%;
+    }
+    .why_choose_us_photo > img {
+      display: block;
+      margin: 0 auto;
+    }
+    .testi_slider_nav {
+      z-index: 9;
+    }
+    .single_footer_widget {
+      margin-top: 20px;
+    }    
+    .footer_bottom p {
+      font-size: 10px;
+    }       
+    .footer_menu ul li a {
+      margin: 0 10px;
+    }    
+    .od_bg1:after, .od_bg2:after {
+      display: none;
+    }  
+    .our_degrees_txt {
+      margin-left: 70px;
+      text-align: center;
+    }    
+    .single_events_box > img {
+      width: 100%;
+    }    
+    .index2 .single_testi_slider img {
+      margin-top: 15px;
+    }    
+    .call2action2_photo, .call2action_help{
+      min-height: 210px;
+    }    
+    .send_email {
+      padding-left: 0;
+    }    
+    .stay_con_photo > img {
+      width: 100%;
+    }    
+    .event_post_info ul li {
+      margin: 0 35px;
+    }      
+    .right_sidebar {
+        margin-top: 40px;
+    }    
+    .com_author_photo > img {
+      margin-bottom: 20px;
+    }    
+    .author_photo img {
+      margin-bottom: 20px;
+    }    
+    .author_details {
+      padding-left: 15px;
+    }    
+}
+
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    .container {
+        width:300px;
+    }
+    .header_area {
+      margin-top: 10px;
+    }
+    .header_content {
+      border-bottom: 0px;
+    }
+    .logo {
+      overflow: hidden;
+      padding-left: 0;
+    }
+    .logo a {
+      display: block;
+      float: left;
+      font-size: 16px;
+      width: 75%;
+      line-height: 72px;
+    }  
+    .logo a img{
+      width: 50px;
+    }    
+    .logo .navbar-header {
+      display: block;
+      float: left;
+      width: 25%;
+    }
+    .logo .navbar-header .navbar-toggle {
+      margin: 19px 10px;
+    }
+    .logo .navbar-toggle .icon-bar {
+        background: #ff3d00;
+    }
+    .nav_area {
+      padding-right: 15px;
+    }
+    ul.nav.navbar-nav li > a {
+      font-size: 15px;
+      line-height: 30px;
+    }
+    ul.nav.navbar-nav{
+        margin: 3px -15px;
+    }
+    ul.nav.navbar-nav li{
+      margin-bottom: 10px;
+    }
+    ul.nav.navbar-nav li:last-child{
+      margin-bottom: 0;
+    }    
+    .key_to_success_area {
+      height: auto;
+      margin-top: 0;
+    }   
+    .key2seccess_txt {
+      padding: 0;
+      position: relative;
+    }    
+    .key2seccess_txt h2 {
+      font-size: 17px;
+      margin-top: 20px;
+    }    
+    .key2seccess_txt a {
+      margin:10px;
+      padding: 0 10px;
+      line-height: 35px;
+    }    
+    .section-padding {
+      padding: 50px 0;
+    }    
+    .section_heading h1 {
+      font-size: 30px;
+    }    
+    .section_heading p {
+      font-size: 15px;
+    }
+    .course_search {
+      padding-top: 30px;
+    }
+    .course_search select, .course_search input[type="text"] {
+      margin: 5px 0;
+      width: 100%;
+    }    
+    .why_choose_us_txt h1 {
+      font-size: 28px;
+    }    
+    .testi_slider_nav {
+      z-index: 9;
+    }    
+    .all_testimonial {
+      padding: 0 14px;
+    }    
+    .testi_slider_nav .testi_prev, .testi_slider_nav .testi_next {
+      width: 30px;
+    }    
+    .all_partners {
+      padding-top: 30px;
+    }    
+    .sing_course_thumb > img {
+      width: 100%;
+    }    
+    .newslatter input[type="email"] {
+      font-size: 29px;
+      line-height: 30px;
+      padding-right: 52px;
+    }    
+    .single_footer_widget {
+      margin-top: 30px;
+    }     
+    .footer_bottom p {
+      text-align: center;
+      margin-bottom: 20px;
+    }    
+    .footer_menu ul {
+      text-align: center;
+    }    
+    .our_degrees_txt {
+      margin: 0;
+      text-align: center;
+    }
+    .od_bg1, .od_bg2 {
+      min-height: inherit;
+    }
+    .od_bg1:after, .od_bg2:after {
+      display: none;
+    }
+    .sing_degree_icon {
+      margin: 0 auto 20px;
+    }    
+    .sing_degree_icon:after {
+        display: none;
+    }    
+    .sing_degree_txt {
+      text-align: center;
+    }    
+    .index2 .testi_studient_txt {
+      margin-top: 0;
+    }  
+    .index2 .testi_studient_txt i {
+      display: none;
+    }    
+    .testi_studient_txt p {
+      font-size: 16px;
+      line-height: 23px;
+      margin-bottom: 25px;
+    }    
+    .single_events_box > img {
+      width: 100%;
+    }    
+    .breadcrumb_area {
+      margin-top: 0;
+    }
+    .breadcrumb_top {
+        background-size: cover;
+    }    
+    .breadcrumb_title {
+      margin-top: 0;
+    }    
+    .breadcrumb_nav ul {
+      text-align: left;
+    }    
+    .breadcrumb_nav h2 {
+      font-size: 20px;
+      padding-left: 15px;
+      line-height: 40px
+    }
+    .breadcrumb_nav ul li {
+      line-height: 40px;
+    }
+    .breadcrumb_nav ul li a:after {
+      top: -9px;
+    }
+    .call2action_btn {
+      text-align: center;
+    }    
+    .call2action2_photo > img {
+      left: 23%;
+    }    
+    .call2action_apply {
+      padding-top: 40px;
+      text-align: center;
+    }    
+    .call2action_help {
+      margin-left: -15px;
+    }    
+    .map_caption {
+      left: 0;
+      position: relative;
+      width: 300px;
+      padding: 40px 0;
+      margin: 0 auto;
+    }    
+    #map_area {
+      min-height: 200px;
+    }
+    .send_us_email_area {
+      background: #f8f8f8;
+    }    
+    .send_email .section-padding {
+      overflow: hidden;
+      padding: 50px 0;
+    }
+    .send_email {
+      padding-left: 0;
+    }    
+    .contact_info {
+      padding-left: 40px;
+    }    
+    .map_caption > a {
+      margin-left: 40px;
+    }    
+    .email_form .fix_p_r {
+      padding-right: 15px;
+    }    
+    .not_found404 h1 {
+      font-size: 120px;
+    }    
+    .not_found404 h2 {
+      font-size: 30px;
+    }    
+    .not_found404 h3 {
+      font-size: 20px;
+      line-height: 28px;
+    }    
+    .sing_alumni_photo > img {
+      display: block;
+      margin: 0 auto;
+    }
+    .event_post_info ul {
+      text-align: left;
+    }    
+    .event_post_info ul li {
+      margin: 5px 25px;
+      display: block;
+    }    
+    .event_post_content blockquote {
+      margin-left: 0;
+      padding: 10px 0 10px 5px;
+    }    
+    .event_post_footer ul li {
+      margin-top:  10px;
+    }    
+    .event_location {
+      padding: 10px;
+    }    
+    #event-map {
+      height: 200px;
+    }    
+    .right_sidebar {
+        margin-top: 40px;
+    }    
+    .all_right_widgets {
+      padding: 35px 15px;
+    }    
+    .lat_news_right img {
+      float: none;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .lat_news_right_con {
+      float: none;
+      width: auto;
+      text-align: center;
+    }    
+    .single_social_share {
+      width: 150px;
+      margin: 15px auto;
+    }    
+    .blog_post_footer ul {
+      padding: 0 5px;
+    }    
+    .blog_post_footer ul li {
+      display: block;
+      margin-right: 0;
+    }    
+    .blog_post_footer_right_item {
+      float: none;
+    }    
+    .author_details h2 {
+      margin-top: 20px;
+      text-align: center;
+    }    
+    .author_details {
+      padding-left: 10px;
+    }    
+    .com_author_photo > img {
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .comment_details h3 {
+      text-align: center;
+    }    
+    .single_post_comment_area {
+      padding: 25px 5px 50px;
+    }  
+    ul.coments li ul li {
+      padding-left: 20px;
+    }    
+    .blog_post_content blockquote {
+      padding: 20px;
+    }    
+    .blog_post_content blockquote::before {
+        display: none;
+    }     
+}
+
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width:450px;
+    }
+    .sing_our_facult_photo img {
+      left: calc(50% - 130px);
+    }
+    .all_testimonial {
+      padding: 0;
+    }    
+    .key2seccess_txt a {
+      line-height: 42px;
+      margin: 20px 23px;
+      padding: 0 35px;
+    }    
+    .single_events_box .sing_event_caption {
+      padding: 50px;
+    }    
+    .blog_post_photo > img {
+      width: 100%;
+    }    
+    .our_degrees_txt, .our_degrees_item{
+      padding: 0 30px;
+    }    
+    .map_caption {
+      width: 450px;
+    }    
+    .lat_news_right img {
+      display: initial;
+      float: left;
+      margin-right: 10px;
+    }    
+    .lat_news_right_con {
+      float: left;
+      text-align: left;
+      width: 290px;
+    }    
+    ul.coments li ul li {
+      padding-left: 40px;
+    } 
+}
