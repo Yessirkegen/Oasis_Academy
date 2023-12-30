@@ -1340,12 +1340,12 @@ body {
 
 .send_email {
     background-color: #ffffff;
-    padding: 60px 0; /* Increased padding around the form */
+    padding: 0px 0; /* Increased padding around the form */
 }
 
 .email_form {
     background-color: #fff;
-    padding: 5px; /* Increased padding inside the form */
+    padding: 0px; /* Increased padding inside the form */
     border-radius: 1px; /* Slightly larger border radius for a softer look */
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     max-width: 800px; /* Increased max-width for larger form */
@@ -1356,13 +1356,13 @@ body {
 .email_form h2 {
     font-size: 30px; /* Increased font size for headings within the form */
     color: #333;
-    margin-bottom: 30px; /* Increased spacing after heading */
+    margin-bottom: 15px; /* Increased spacing after heading */
 }
 
 .email_form label {
     font-size: 20px; /* Increased font size for labels */
     color: #333;
-    margin-bottom: 15px; /* Increased spacing after labels */
+    margin-bottom: 1px; /* Increased spacing after labels */
 }
 
 .email_form input[type="text"],

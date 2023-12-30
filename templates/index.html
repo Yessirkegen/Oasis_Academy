@@ -10,9 +10,39 @@
 <!--      }-->
 
 
+<!--    <style>-->
+<!--        .modal-fullscreen {-->
+<!--            width: 100vw;-->
+<!--            margin: 0;-->
+<!--            top: 0;-->
+<!--            left: 0;-->
+<!--        }-->
+<!--        .modal-content {-->
+<!--            /* Убрать фиксированную высоту, чтобы размер модального окна подстраивался под содержимое */-->
+<!--        }-->
+<!--      <style>-->
+<!--     /* Стили для модального окна на весь экран */-->
+<!--        .modal-dialog-fullscreen {-->
+<!--            min-width: 100vw;-->
+<!--            min-height: 100vh;-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--        }-->
 
+<!--        .modal-content-fullscreen {-->
+<!--            min-height: 100vh;-->
+<!--            height: auto;-->
+<!--            border: 0;-->
+<!--            border-radius: 0;-->
+<!--        }</style>-->
     <link rel="stylesheet" href="static/css/globals.css" />
     <link rel="stylesheet" href="static/css/styleMain.css" />
+      <!-- Add these links to include Bootstrap CSS and JS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
   </head>
 
@@ -62,13 +92,15 @@
               <span class="span"> откройте для себя мир </span>
               <span class="text-wrapper-4">Искусственного Интеллекта</span>
             </p>
-            <div class="group">
-              <div class="div-wrapper"><div class="text-wrapper-5">Записаться на курс</div></div>
+            <section class="group" id="leave-applicationZ">
+              <div class="div-wrapper" href="#leave-applicationZ"><div class="text-wrapper-5">Записаться на курс</div></div>
+                <a href="#leave-application" class="text-wrapper-5">Записаться на курс</a>
+
               <div class="rectangle"></div>
               <div class="rectangle-2"></div>
               <div class="rectangle-3"></div>
               <div class="rectangle-4"></div>
-            </div>
+            </section>
           </div>
           <section class="view-4" id="about-us">
 
@@ -233,33 +265,34 @@
         </div>
         <section class="view-8" id="leave-application">
           <div class="text-wrapper-27">ОСТАВЬТЕ ВАШУ ЗАЯВКУ!</div>
-          <div class="group-15">
-            <div class="overlap-group-6"><div class="text-wrapper-28">Отправить</div></div>
-          </div>
+<!--          <div class="group-15">-->
+<!--            <div class="overlap-group-6"><div class="text-wrapper-28">Отправить</div></div>-->
+<!--          </div>-->
           <div class="view-9">
     <section class="send_us_email_area">
         <div class="container">
             <div class="send_email">
                 <div class="email_form">
                     <h2>Оставьте вашу заявку и мы свяжимся с Вами в ближайшее время!</h2>
-                    <form action="{{ url_for('submit_form') }}" method="POST">
-    <div class="form_row">
-        <div class="form_col">
-            <label>Ваше имя <span>*</span></label>
-            <input type="text" name="name" required>
-        </div>
-        <div class="form_col">
-            <label>Ваш E-Mail <span>*</span></label>
-            <input type="text" name="email" required>
-        </div>
-    </div>
+                    <form id="contactForm" action="/submit_form" method="POST">
+                        <div class="form_row">
+                            <div class="form_col">
+                                <label>Ваше имя <span>*</span></label>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div class="form_col">
+                                <label>Ваш E-Mail <span>*</span></label>
+                                <input type="text" name="email" required>
+                            </div>
+                        </div>
 
                         <label>Номер телефона</label>
                         <input type="text" name="phone">
 
                         <label>Сообщение</label>
                         <textarea name="message" required></textarea>
-                        <input type="submit" value="Отправить">
+
+                        <input type="submit" value="Отправить" id="submitBtn">
                     </form>
                 </div>
             </div>
@@ -279,6 +312,7 @@
           <a href="#about-us" class="text-wrapper-33">О нас</a>
           <a href="#ai-course" class="text-wrapper-34">Курс ИИ</a>
           <a href="#leave-application" class="text-wrapper-35">Оставить заявку</a>
+
         </div>
 
         <div class="view-12">
@@ -303,12 +337,38 @@
         </div>
       </div>
     </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
 
-  </body>
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    submitBtn.value = 'Отправлено';
+                    submitBtn.disabled = true;
+                    submitBtn.style.backgroundColor='#808080'
+                    submitBtn.style.color='white'
+                } else {
+                    submitBtn.value = 'Ошибка отправки';
+                }
+            })
+            .catch(error => {
+                console.error('Ошибка:', error);
+                submitBtn.value = 'Ошибка отправки';
+            });
+        });
+    });
+    </script>
+</body>
 </html>
-
-
-
 
 
 
