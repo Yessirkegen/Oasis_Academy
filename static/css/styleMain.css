@@ -1392,8 +1392,9 @@ body {
     background-color: #6CAE9E;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 850px) {
     .email_form input[type="text"],
+
     .email_form textarea {
         padding: 25px; /* Even larger padding on larger screens */
         font-size: 20px; /* Larger font size for inputs on larger screens */
@@ -1416,14 +1417,18 @@ body {
 }
 
 /* Responsive adjustments */
-@media (max-width: 767px) {
+@media (max-width: 850px) {
+    display: flex;
+    flex-wrap: wrap;
     .email_form .form_row {
+
         flex-direction: column;
     }
 
     .email_form .form_row .form_col {
-        flex: none;
-        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
     }
 }
 

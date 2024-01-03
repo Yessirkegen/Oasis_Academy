@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=0.285">
     <meta charset="utf-8" />
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+<!--      <style>-->
+<!--        body {-->
+<!--            transform-origin: 0 0;-->
+<!--        }-->
+
+<!--        @media (max-width: 767px) {-->
+<!--            body {-->
+<!--                transform: scale(0.7);-->
+<!--            }-->
+<!--        }-->
+<!--    </style>-->
+<!--&lt;!&ndash;    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">&ndash;&gt;-->
 <!--    <style>-->
 <!--      body {-->
 <!--        transform: scale(0.9);-->
@@ -42,8 +54,35 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--      <script>-->
+
+<!--        &lt;!&ndash;function isMobileDevice() {-->
+<!--            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);-->
+<!--        }-->
 
 
+<!--        function redirectIfMobile() {-->
+<!--            if (isMobileDevice()) {-->
+<!--                window.location.href = 'C:\Coding\educampus\educampus\templates\mobile.html'; // Замените 'mobile.html' на путь к вашей мобильной странице-->
+<!--            }-->
+<!--        }-->
+
+
+<!--        window.onload = function () {-->
+<!--            redirectIfMobile();-->
+<!--        };&ndash;&gt;-->
+<!--    </script>-->
+      <style>
+        body {
+            transform-origin: 0 0;
+        }
+
+        @media (max-width: 576px) {
+            body {
+                transform: scale(0.3);
+            }
+        }
+    </style>
   </head>
 
   <body>
@@ -366,6 +405,21 @@
             });
         });
     });
+    </script>
+
+
+  <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            function isMobileDevice() {
+                return window.innerWidth <= 767;
+            }
+
+
+            if (isMobileDevice()) {
+                document.body.style.transform = 'scale(0.7)'; // Adjust the scale value as needed
+            }
+        });
     </script>
 </body>
 </html>
