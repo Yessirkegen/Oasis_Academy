@@ -9,7 +9,7 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'oaisis2024@gmail.com'
-app.config['MAIL_PASSWORD'] = 'pvbw yqfb lekm jurl'  # Используйте более безопасный способ хранения паролей
+app.config['MAIL_PASSWORD'] = 'pvbw yqfb lekm jurl'
 app.config['MAIL_DEFAULT_SENDER'] = 'oaisis2024@gmail.com'
 
 mail = Mail(app)

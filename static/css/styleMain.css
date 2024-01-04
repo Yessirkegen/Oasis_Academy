@@ -1340,52 +1340,52 @@ body {
 
 .send_email {
     background-color: #ffffff;
-    padding: 0px 0; /* Increased padding around the form */
+    padding: 0px 0;
 }
 
 .email_form {
     background-color: #fff;
-    padding: 0px; /* Increased padding inside the form */
-    border-radius: 1px; /* Slightly larger border radius for a softer look */
+    padding: 0px;
+    border-radius: 1px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Increased max-width for larger form */
+    max-width: 800px;
 
-    margin: auto; /* Center the form in the page */
+    margin: auto;
 }
 
 .email_form h2 {
-    font-size: 30px; /* Increased font size for headings within the form */
+    font-size: 30px;
     color: #333;
-    margin-bottom: 15px; /* Increased spacing after heading */
+    margin-bottom: 15px;
 }
 
 .email_form label {
-    font-size: 20px; /* Increased font size for labels */
+    font-size: 20px;
     color: #333;
-    margin-bottom: 1px; /* Increased spacing after labels */
+    margin-bottom: 1px;
 }
 
 .email_form input[type="text"],
 .email_form textarea {
-    width: 100%; /* Make input fields take full width */
-    padding: 20px; /* Increased padding for input fields */
-    margin-bottom: 30px; /* Increased spacing after input fields */
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
     border: 1px solid #ddd;
-    border-radius: 8px; /* Slightly larger border radius for input fields */
-    font-size: 18px; /* Larger font size for better readability */
+    border-radius: 8px;
+    font-size: 18px;
 }
 
 .email_form input[type="submit"] {
     background-color: #93D2BD;
     color: #fff;
-    padding: 10px 30px; /* Increased padding for a larger button */
-    font-size: 20px; /* Larger font size for button text */
+    padding: 10px 30px;
+    font-size: 20px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    display: block; /* Make the button a block element */
-    width: 100%; /* Full width */
-    margin-top: 10px; /* Added margin on top of the button */
+    display: block;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .email_form input[type="submit"]:hover {
@@ -1395,27 +1395,26 @@ body {
 @media (min-width: 768px) {
     .email_form input[type="text"],
     .email_form textarea {
-        padding: 25px; /* Even larger padding on larger screens */
-        font-size: 20px; /* Larger font size for inputs on larger screens */
+        padding: 25px;
+        font-size: 20px;
     }
 
     .email_form input[type="submit"] {
-        padding: 25px 50px; /* Even larger button on larger screens */
-        font-size: 22px; /* Larger font size for button on larger screens */
+        padding: 25px 50px;
+        font-size: 22px;
     }
 }
 
 .email_form .form_row {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Add some space between the two fields */
+    gap: 20px;
 }
 
 .email_form .form_row .form_col {
-    flex: 1; /* Each column will take up equal space */
+    flex: 1;
 }
 
-/* Responsive adjustments */
 @media (max-width: 767px) {
     .email_form .form_row {
         flex-direction: column;
