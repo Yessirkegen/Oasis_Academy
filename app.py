@@ -8,9 +8,9 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'oaisis2024@gmail.com'
-app.config['MAIL_PASSWORD'] = 'pvbw yqfb lekm jurl'
-app.config['MAIL_DEFAULT_SENDER'] = 'oaisis2024@gmail.com'
+app.config['MAIL_USERNAME'] = 'beksultanestirkegen@gmail.com'
+app.config['MAIL_PASSWORD'] = 'fune ctkk hleu pwjw '
+app.config['MAIL_DEFAULT_SENDER'] = 'beksultanestirkegen@gmail.com'
 
 mail = Mail(app)
 db = SQLAlchemy(app)
@@ -51,7 +51,7 @@ def send_email(name, email, phone, message):
     subject = 'New Form Submission'
     body = f"Name: {name}\nEmail: {email}\nPhone: {phone}\nMessage: {message}"
 
-    msg = Message(subject, recipients=['oaisis2024@gmail.com'])
+    msg = Message(subject, recipients=['beksultanestirkegen@gmail.com'])
     msg.body = body
     mail.send(msg)
 
